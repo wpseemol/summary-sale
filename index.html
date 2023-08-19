@@ -17,22 +17,29 @@
     <!-- main container tailwind class "container sm:container md:container 2xl:container mx-auto px-4"  -->
     <header class="bg-heroBgColor">
         <!-- header section here -->
-        <div class="container sm:container md:container 2xl:container mx-auto px-4 
-    flex justify-center items-center text-primaryTextColor ">
+        <div class="container sm:container md:container lg:container 2xl:container mx-auto md:px-4 px-10
+    flex flex-col md:flex-row justify-center items-center py-20 text-primaryTextColor ">
             <div class="text-center">
                 <h4 class="text-fevrFontSize font-medium">---SALE FEVER---</h4>
-                <h2 class="text-disoundFontSize font-bold 
-                max-w-discountSectioWidth my-16">Purchase TK 200 or above & get
-                    <span class="text-primaryBtnClor">20% off</span></h2>
-                <div class="flex justify-center items-center">
-                    <h3 class="text-2xl font-medium mr-4">Use Promo Code</h3>
+                <h2 class="lg:text-disoundFontSize text-5xl font-bold 
+                2xl:max-w-discountSectioWidth md:max-w-heroTebletWidth sm:my-16">Purchase TK 200 or above & get
+                    <span class="text-primaryBtnClor">20% off</span>
+                </h2>
+                <div class="md:flex justify-center items-center hidden">
+                    <h3 class="text-2xl font-medium  lg:mr-4 mr-1">Use Promo Code</h3>
                     <a id="coupn-code" class="btn bg-primaryBtnClor hover:bg-primaryBtnClor
                     text-neutral-50 rounded-lg tracking-widest uppercase" href="#">SELL200</a>
                 </div>
             </div>
 
-            <div class="max-w-discountSectioWidth my-20">
+            <div class="2xl:max-w-discountSectioWidth md:max-w-heroTebletWidth ">
                 <img src="./images/Summer 1.png" alt="Summer SALE">
+            </div>
+
+            <div class="flex justify-center items-center mt-4 md:hidden">
+                <h3 class="text-2xl font-medium mr-4">Use Promo Code</h3>
+                <a id="coupn-code" class="btn bg-primaryBtnClor hover:bg-primaryBtnClor
+                text-neutral-50 rounded-lg tracking-widest uppercase" href="#">SELL200</a>
             </div>
         </div>
     </header>
