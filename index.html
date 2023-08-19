@@ -13,10 +13,11 @@
     <title>Summer SALE</title>
 </head>
 
-<body class="font-workSans">
-    <!-- main container tailwind class "container sm:container md:container 2xl:container mx-auto px-4"  -->
+<body class="font-workSans bg-bodyBgColor">
+    <!-- main container tailwind class "container sm:container md:container lg:container 2xl:container mx-auto px-4"  -->
+
+    <!-- header section here -->
     <header class="bg-heroBgColor">
-        <!-- header section here -->
         <div class="container sm:container md:container lg:container 2xl:container mx-auto md:px-4 px-10
     flex flex-col md:flex-row justify-center items-center py-20 text-primaryTextColor ">
             <div class="text-center">
@@ -27,8 +28,8 @@
                 </h2>
                 <div class="md:flex justify-center items-center hidden">
                     <h3 class="text-2xl font-medium  lg:mr-4 mr-1">Use Promo Code</h3>
-                    <a id="coupn-code" class="btn bg-primaryBtnClor hover:bg-primaryBtnClor
-                    text-neutral-50 rounded-lg tracking-widest uppercase" href="#">SELL200</a>
+                    <a id="coupn-text" class="btn bg-primaryBtnClor hover:bg-primaryBtnClor
+                    text-neutral-50 rounded-lg tracking-widest" href="#">SELL200</a>
                 </div>
             </div>
 
@@ -39,10 +40,132 @@
             <div class="flex justify-center items-center mt-4 md:hidden">
                 <h3 class="text-2xl font-medium mr-4">Use Promo Code</h3>
                 <a id="coupn-code" class="btn bg-primaryBtnClor hover:bg-primaryBtnClor
-                text-neutral-50 rounded-lg tracking-widest uppercase" href="#">SELL200</a>
+                text-neutral-50 rounded-lg tracking-widest" href="#">SELL200</a>
             </div>
         </div>
     </header>
+
+    <main class="container sm:container md:container lg:container 2xl:container mx-auto px-4">
+        <!-- produact section -->
+        <section class="flex justify-center gap-5  my-20 md:my-28">
+            <div>
+                <h2 class="text-productTitleSize font-semibold mb-8">Kitchenware</h2>
+                <div class="flex gap-4">
+                    <!-- product 1 -->
+                    <div class="card bg-whiteColor p-5">
+                        <figure class="px-10 pt-10 bg-productBgColor w-72 rounded-md">
+                            <img src="./images/prod1.png" alt="Shoes" class="rounded-xl" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+
+                            <div class="rating">
+                                <input type="radio" name="rating-1" class="mask mask-star-2 bg-reatingStarColor" />
+                                <input type="radio" name="rating-1" class="mask mask-star-2 bg-reatingStarColor"
+                                    checked />
+                                <input type="radio" name="rating-1" class="mask mask-star-2 bg-reatingStarColor" />
+                                <input type="radio" name="rating-1" class="mask mask-star-2 bg-reatingStarColor" />
+                                <input type="radio" name="rating-1" class="mask mask-star-2 bg-reatingStarColor" />
+                            </div>
+
+                            <h2 class="card-title">K. Accessories</h2>
+                            <p class="text-xl font-normal"><span>39.00 TK</span></p>
+                        </div>
+                    </div>
+
+                    <!-- product 2 -->
+                    <div class="card bg-whiteColor p-5">
+                        <figure class="px-10 pt-10 bg-productBgColor w-72 rounded-md">
+                            <img src="./images/prod2.png" alt="Shoes" class="rounded-xl" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+
+                            <div class="rating">
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-reatingStarColor" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-reatingStarColor"
+                                    checked />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-reatingStarColor" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-reatingStarColor" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-reatingStarColor" />
+                            </div>
+
+                            <h2 class="card-title">K. Accessories</h2>
+                            <p class="text-xl font-normal"><span>39.00 TK</span></p>
+                        </div>
+                    </div>
+
+                    <!-- product 1 -->
+                    <div class="card bg-whiteColor p-5">
+                        <figure class="px-10 pt-10 bg-productBgColor rounded-md w-72">
+                            <img src="./images/prod3.png" alt="Shoes" class="rounded-xl" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+
+                            <div class="rating">
+                                <input type="radio" name="rating-3" class="mask mask-star-2 bg-reatingStarColor" />
+                                <input type="radio" name="rating-3" class="mask mask-star-2 bg-reatingStarColor"
+                                    checked />
+                                <input type="radio" name="rating-3" class="mask mask-star-2 bg-reatingStarColor" />
+                                <input type="radio" name="rating-3" class="mask mask-star-2 bg-reatingStarColor" />
+                                <input type="radio" name="rating-3" class="mask mask-star-2 bg-reatingStarColor" />
+                            </div>
+
+                            <h2 class="card-title">K. Accessories</h2>
+                            <p class="text-xl font-normal"><span>39.00 TK</span></p>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div class="mt-24">
+                <div class="bg-whiteColor p-6 rounded-lg">
+                    <h3 class="text-2xl font-medium mb-5">Have coupon?</h3>
+                    <div class="text-center">
+                        <input class="text-xl p-3 border border-borderColor
+                        focus:outline-none font-normal" placeholder="Coupon code" type="text" id="coupon-code">
+                        <input class="p-3 border border-primaryBtnClor 
+                        text-xl font-semibold -ml-2 bg-primaryBtnClor text-whiteColor rounded-r-lg" type="button"
+                            value="Apply">
+                    </div>
+
+                </div>
+                <div class="bg-whiteColor mt-5 p-6 rounded-lg text-2xl font-medium">
+                    <ol class="list-decimal list-inside border-b 
+                    border-borderColor mb-6 pb-6 ">
+                        <li>Coffee</li>
+                        <li>Tea</li>
+                        <li>Milk</li>
+                    </ol>
+                    <div class="">
+                        <p>Total price: <span class="text-tkTextColor">257.00 TK</span></p>
+                        <p>Discount : <span class="text-tkTextColor">51.40 TK</span></p>
+                        <p class="border-b border-borderColor pb-6">Total: <span class="text-tkTextColor">51.40 TK</span></p>
+                        
+                        <button class="btn bg-primaryBtnClor hover:bg-primaryBtnClor
+                        text-neutral-50 rounded-lg tracking-widest py-4 px-16 mt-6">Make Purchase</button>
+
+                        
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 </body>
