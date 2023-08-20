@@ -28,8 +28,8 @@
                 </h2>
                 <div class="md:flex justify-center items-center hidden">
                     <h3 class="text-2xl font-medium  lg:mr-4 mr-1">Use Promo Code</h3>
-                    <a id="coupn-text" class="btn bg-primaryBtnClor hover:bg-primaryBtnClor
-                    text-neutral-50 text-xl rounded-lg tracking-widest" href="#cuponLocation" disabled>SELL200</a>
+                    <a id="coupn-text" title="Copy to Clipboard" class="btn bg-primaryBtnClor hover:bg-primaryBtnClor
+                    text-neutral-50 text-xl rounded-lg tracking-widest" href="#cuponLocation">SELL200</a>
                 </div>
             </div>
 
@@ -39,8 +39,8 @@
 
             <div class="flex justify-center items-center mt-4 md:hidden">
                 <h3 class="text-2xl font-medium mr-4">Use Promo Code</h3>
-                <a href="#copunlocation" class="btn bg-primaryBtnClor hover:bg-primaryBtnClor
-                text-neutral-50 text-xl rounded-lg tracking-widest" disabled>SELL200</a>
+                <a id="coupn-text" title="Copy to Clipboard" href="#copunlocation" class="btn bg-primaryBtnClor hover:bg-primaryBtnClor
+                text-neutral-50 text-xl rounded-lg tracking-widest">SELL200</a>
             </div>
         </div>
     </header>
@@ -53,7 +53,7 @@
             <!-- group product -->
             <div id="cuponLocation" class="flex items-center xl:items-start flex-col">
                 <h2 class="text-productTitleSize font-semibold my-8">Kitchenware</h2>
-                <div class="flex justify-center flex-col flex-wrap sm:flex-row lg:flex-nowrap gap-4">
+                <div class="grupPdoducts flex justify-center flex-col flex-wrap sm:flex-row lg:flex-nowrap gap-4">
                     <!-- product 1 -->
                     <div class="card bg-whiteColor p-5">
                         <figure class="px-10 pt-10 bg-productBgColor w-72  rounded-md">
@@ -120,7 +120,7 @@
 
                 <!-- group section -->
                 <h2 class="text-productTitleSize font-semibold my-8">Sportswear</h2>
-                <div class="flex justify-center flex-col flex-wrap sm:flex-row lg:flex-nowrap gap-4">
+                <div class="grupPdoducts flex justify-center flex-col flex-wrap sm:flex-row lg:flex-nowrap gap-4">
                     <!-- product 1 -->
                     <div class="card bg-whiteColor p-5">
                         <figure class="px-10 pt-10 bg-productBgColor w-72 rounded-md">
@@ -186,7 +186,7 @@
                 </div>
                 <!-- group section -->
                 <h2 class="text-productTitleSize font-semibold my-8">Furniture</h2>
-                <div class="flex justify-center flex-col flex-wrap sm:flex-row lg:flex-nowrap gap-4">
+                <div class="grupPdoducts flex justify-center flex-col flex-wrap sm:flex-row lg:flex-nowrap gap-4">
                     <!-- product 1 -->
                     <div class="card bg-whiteColor p-5">
                         <figure class="px-10 pt-10 bg-productBgColor w-72 rounded-md">
@@ -261,33 +261,38 @@
                     <h3 class="text-2xl font-medium mb-5">Have coupon?</h3>
                     <div class="text-center lg:w-80  ">
                         <input class="text-xl p-2 border border-borderColor
-                        focus:outline-none font-normal w-48 lg:w-56 rounded-l-lg -ml-4" placeholder="Coupon code" type="text" id="coupon-code">
+                        focus:outline-none font-normal w-48 lg:w-56 rounded-l-lg -ml-4" placeholder="Coupon code"
+                            type="text" id="coupon-code">
                         <input class="
                         capitalize
                         btn rounded-l-none
                         hover:bg-primaryBtnClor
                           border border-primaryBtnClor 
                         text-xl font-semibold -ml-2 bg-primaryBtnClor 
-                        text-whiteColor rounded-r-lg" type="button"
-                            value="Apply" disabled>
+                        text-whiteColor rounded-r-lg" id="copunApplyBtn" type="button" value="Apply">
                     </div>
 
                 </div>
                 <div class="bg-whiteColor mt-5 p-6 rounded-lg text-2xl font-medium">
-                    <ol class="list-decimal list-inside border-b 
-                    border-borderColor mb-6 pb-6 ">
+                    <ol id="selectedTitle" class="list-decimal list-inside border-b 
+                    border-borderColor mb-6 pb-6 hidden">
                         <li>Coffee</li>
                         <li>Tea</li>
                         <li>Milk</li>
                     </ol>
-                    <div class="">
+                    <div class="" id="cardPrice">
                         <p>Total price: <span class="text-tkTextColor">257.00 TK</span></p>
                         <p>Discount : <span class="text-tkTextColor">51.40 TK</span></p>
                         <p class="border-b border-borderColor pb-6">Total: <span class="text-tkTextColor">51.40
                                 TK</span></p>
 
-                        <button class="btn bg-primaryBtnClor hover:bg-primaryBtnClor
-                        text-neutral-50 rounded-lg tracking-widest px-16 mt-6 text-xl capitalize" disabled>Make Purchase</button>
+                        <button class="btn bg-primaryBtnClor 
+                        hover:bg-primaryBtnClor
+                        text-neutral-50 rounded-lg 
+                        tracking-widest px-16 mt-6 
+                        text-xl capitalize"
+                        id="purchasBtn"
+                        >Make Purchase</button>
 
 
                     </div>
@@ -311,7 +316,7 @@
 
 
 
-
+    <script src="./main.js"></script>
 </body>
 
 </html>
