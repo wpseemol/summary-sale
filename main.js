@@ -25,7 +25,7 @@ for (const promoCodeBtn of promoCodeBtns) {
     // code copy 
     promoCodeBtn.addEventListener("click", function() {
         navigator.clipboard.writeText(promoCode)
-        console.log(couponCodeInput.value = promoCodeBtn.innerText);
+        couponCodeInput.value = promoCodeBtn.innerText;
     })
 }
 /**
